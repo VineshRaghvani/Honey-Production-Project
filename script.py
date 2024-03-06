@@ -5,7 +5,7 @@ from sklearn import linear_model
 
 df = pd.read_csv("honeyproduction.csv")
 
-print(df.head())
+#print(df.head())
 
 prod_per_year = df.groupby('year').totalprod.mean().reset_index()
 #print(prod_per_year)
